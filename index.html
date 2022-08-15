@@ -5,9 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
     <title>Weadther App</title>
   </head>
   <body>
+    <div class="card">
+      <div class="search">
+        <input placeholder="Search" type="text" class="search-bar" />
+        <button>
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+      <div class="weather">
+        <h2 class="city">Weather in Denver</h2>
+        <h1 class="temp">51°C</h1>
+        <img src="" alt="" class="icon" />
+        <div class="description">Cloudy</div>
+        <div class="humidity">humidity : 60%</div>
+        <div class="wind">Wind speed : 51Km/h</div>
+      </div>
+    </div>
+
     <script src="app.js"></script>
   </body>
 </html>
