@@ -6,8 +6,12 @@ body {
   margin: 0;
   background: #222;
   font-family: 'Open Sans', sans-serif;
-  background-image: url('https://source.unsplash.com/1600x900/?landscape');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url('https://source.unsplash.com/1700x900/?landscape');
   font-size: 120%;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
 }
 .card {
   background: #000000d0;
@@ -52,4 +56,26 @@ button:hover {
 }
 .temp {
   margin: 0;
+  margin-bottom: 0.4em;
+}
+.description {
+  text-transform: capitalize;
+  margin-left: 8px;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+.weather.loading {
+  visibility: hidden;
+  max-height: 20px;
+  position: relative;
+}
+.weather.loading::after {
+  visibility: visible;
+  content: 'Loading...';
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 20px;
 }
